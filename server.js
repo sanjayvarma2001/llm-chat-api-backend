@@ -5,14 +5,6 @@ app.use(express.json());
 require('dotenv').config();
 
 app.post('/chat', async (req,res) => {
-    console.log('BODY =>', req.body);
-
-  // Temporary debug
-  return res.status(200).json({
-    debug: true,
-    body: req.body,
-    contentType: req.headers['content-type']
-  });
     try{
         const {chat} = req.body;
         if (!chat){
