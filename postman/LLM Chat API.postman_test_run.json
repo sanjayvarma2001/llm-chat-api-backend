@@ -1,0 +1,84 @@
+{
+	"id": "f71b73af-8698-419e-b262-01f3fdbdbf78",
+	"name": "LLM Chat API",
+	"timestamp": "2025-12-25T05:27:23.348Z",
+	"collection_id": "50624373-48bfe9a3-12dc-4002-bf89-dec04b4107c6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-25T05:27:18.119Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "37ad9a14-b783-4698-aa93-ed18d87ae37f",
+			"name": "Get data",
+			"url": "http://localhost:3000/",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f8ef1731-4161-4ca1-89cd-a13a12f6f4bd",
+			"name": "Post data",
+			"url": "http://localhost:3000/chat",
+			"time": 4048,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4048
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4061,
+	"collection": {
+		"requests": [
+			{
+				"id": "37ad9a14-b783-4698-aa93-ed18d87ae37f",
+				"method": "GET"
+			},
+			{
+				"id": "f8ef1731-4161-4ca1-89cd-a13a12f6f4bd",
+				"method": "POST"
+			}
+		]
+	}
+}
