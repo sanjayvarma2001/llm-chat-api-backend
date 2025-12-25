@@ -66,3 +66,8 @@ Client
     - Import `postman/llm-chat-api.postman_collection.json` into Postman.
     - Set `base_url` variable to `http://localhost:3000` or your deployed URL.
     - Run requests and check tests for status codes and response fields.
+
+## Live API Endpoint
+
+Live API: https://llm-chat-api-backend.onrender.com/chat
+Usage: POST with JSON { "chat": "Hello" } to get an LLM response.
